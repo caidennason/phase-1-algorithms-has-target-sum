@@ -1,13 +1,29 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (i = 0; i <= array.length; i++){
+    for (j = i + 1; j <= array.length; j++){
+      if (array[i] + array[j] === target){
+        return true
+        } 
+    }
+  }
+  return false
 }
 
 /* 
   Write the Big O time complexity of your function here
+  for (i = 0; i <= array.length; i++){
+    if (array[i] + array[i] === target){
+    return true
+    } else {
+      return false
+    }
+  }
 */
 
 /* 
-  Add your pseudocode here
+  go through each number in the array
+  find if any number plus the other numbers is equal to target
+  hop over each number and see if it equals the target
 */
 
 /*
